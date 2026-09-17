@@ -10,17 +10,18 @@ html{
 }
 body{
     margin: 0;
+    display: flex;
 }
 .left-pillarbox{
-    padding: 17px;
-    width: 267px;
-    height: 748px;
+    padding: 0px;
+    width: 0px;
+    height: 0px;
     background-color: var(--bg-color);
     float: left;
 }
 .content{
-    width: 1000px;
-    height: 748px;
+    width: 100%;
+    height: 100%;
     background-color: #F8DE7E;
     border: 1px solid var(--text-color);
     float: left;
@@ -28,9 +29,9 @@ body{
     color: var(--text-color);
 }
 .right-pillarbox{
-    padding: 17px;
-    width: 267px;
-    height: 748px;
+    padding: 0px;
+    width: 0px;
+    height: 0px;
     background-color: var(--bg-color);
     float: right;
 }
@@ -46,8 +47,8 @@ p{
 }
 #media-ribbon{
     display: flex;
-    flex-direction: row;
-    max-width: 998px;
+    flex-direction: column;
+    max-width: 412px;
     flex-basis: 100%;
     justify-content: center;
     padding-bottom: 233px;
@@ -55,13 +56,35 @@ p{
 }
 #image-container img{
     width: 100%;
-    height: 286px;
 }
 #image-container iframe{
-    min-width: 489px;
     width: 100%;
     height: 286px;
 }
 footer{
     margin: 8px;
+}
+@media (min-width: 600px) {
+    #media-ribbon{
+        flex-direction: row;
+        max-width: 998px;
+    }
+    #image-container iframe{
+        min-width: 489px;
+    }
+}
+@media (min-width: 1300px) {
+    .left-pillarbox{
+        padding: 17px;
+        width: 100%;
+        max-width: 267px;
+        height: 748px;
+    }
+    .right-pillarbox{
+        padding: 17px;
+        width: 100%;
+        max-width: 267px;
+        height: 748px;
+    }
+    
 }
