@@ -48,7 +48,7 @@ p{
 #media-ribbon{
     display: flex;
     flex-direction: column;
-    max-width: 412px;
+    max-width: 500px;
     flex-basis: 100%;
     justify-content: center;
     padding-bottom: 233px;
